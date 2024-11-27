@@ -66,16 +66,19 @@ namespace ShopBanGiay
             btnMH.BackColor = Color.White;
             btnCD.BackColor = Color.White;
             btnTK.BackColor = Color.White;
+            btnKhachHang.BackColor = Color.White;
 
-            btnHome.ForeColor = Color.Black;
+
+			btnHome.ForeColor = Color.Black;
             btnHD.ForeColor = Color.Black;
             btnExit.ForeColor = Color.Black;
             btnDT.ForeColor = Color.Black;
             btnMH.ForeColor = Color.Black;
             btnCD.ForeColor = Color.Black;
             btnTK.ForeColor = Color.Black;
+            btnKhachHang.ForeColor = Color.Black;
 
-        }
+		}
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -107,5 +110,18 @@ namespace ShopBanGiay
         {
 
         }
+
+        private void panelMain_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+			OpenChildForm(new frmKhachHang());
+			ResetButtonColors();
+			btnKhachHang.BackColor = Color.Black;
+			btnKhachHang.ForeColor = Color.White;
+		}
     }
 }
