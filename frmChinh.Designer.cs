@@ -815,6 +815,7 @@
 			this.dataGridView2.RowTemplate.Height = 24;
 			this.dataGridView2.Size = new System.Drawing.Size(708, 160);
 			this.dataGridView2.TabIndex = 0;
+			this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
 			// 
 			// ctmsChitietDH
 			// 

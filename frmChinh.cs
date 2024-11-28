@@ -92,5 +92,10 @@ namespace ShopBanGiay
         {
 
         }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+                                                                                                 
+        }
     }
 }
